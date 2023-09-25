@@ -14,8 +14,8 @@
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">Cadastro Pessoas</h1>
         <p class="col-md-8 fs-4">CRUD de pessoas. Projeto de estudos da linguagem php e framework bootstrap.</p>
-        <a href="restrito/cadastro.php" class="btn btn-primary btn-lg" type="button">Cadastrar</a>
-        <a href="restrito/pesquisar.php" class="btn btn-primary btn-lg" type="button">Pesquisar</a>
+        <a href="cadastro.php" class="btn btn-primary btn-lg" type="button">Cadastrar</a>
+        <a href="pesquisar.php" class="btn btn-primary btn-lg" type="button">Pesquisar</a>
         <a class="btn btn-secondary btn-lg" href="../logout.php">Sair</a>
       </div>
     </div>

@@ -53,7 +53,7 @@
                     $data_nascimento =  higenizarTexto($conn, formatarData($linha['data_nascimento']));
                     $foto = $linha['foto'];
                     echo "<tr>
-                            <th ><img class='exibicao_foto' src='img/$foto'></th>
+                            <th ><img class='exibicao_foto' src='../img/$foto'></th>
                             <th scope='row'>$nome</th>
                             <td>$endereco </td>
                             <td>$telefone</td>

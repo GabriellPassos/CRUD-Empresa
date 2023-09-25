@@ -20,7 +20,7 @@
                 $endereco =  higenizarTexto($conn, $_POST['endereco']);
                 $telefone =  higenizarTexto($conn, $_POST['telefone']);
                 $email =  higenizarTexto($conn, $_POST['email']);
-                $data_nascimento = $_POST['data_nascimento'];
+                $data_nascimento =  higenizarTexto($conn,$_POST['data_nascimento']);
                 if(isset($_FILES['foto'])){
                     $foto = $_FILES['foto'];
                     $nome_foto = armazenar_foto($foto);
@@ -37,7 +37,7 @@
                     echo mensagem("Falha no cadastro", "danger");
                 }
                 ?>
-                <a class="btn btn-primary" href="index.php">Voltar</a>
+                <a class="btn btn-primary" href="pesquisar.php">Voltar</a>
             </div>
         </div>
     </div>

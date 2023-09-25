@@ -26,7 +26,9 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Entrar</button>
+                <a href="registro.php" class="btn btn-secondary">Registrar-se</a>
             </form>
+            
             <?php
             include "conexao.php";
             if (isset($_POST['senha']) && $_POST['usuario']) {

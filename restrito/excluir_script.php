@@ -22,7 +22,7 @@
                     echo mensagem("Falha no excluir pessoa.", "danger");
                 }
                 ?>
-                <a class="btn btn-primary" href="index.php">Voltar</a>
+                <a class="btn btn-primary" href="pesquisar.php">Voltar</a>
             </div>
         </div>
     </div>

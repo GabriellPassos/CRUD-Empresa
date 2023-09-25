@@ -23,7 +23,7 @@
                 if((!$vetor_foto['error'])  &&  $tipo == 'image' ){
                     $novo_nome_foto = date("Ymdhms").".$extensao";
     
-                    move_uploaded_file($vetor_foto['tmp_name'], "img/" . $novo_nome_foto);
+                    move_uploaded_file($vetor_foto['tmp_name'], "../img/" . $novo_nome_foto);
                     return $novo_nome_foto;
                 }else{
                    throw new Exception('Arquivo nulo ou inválido.');
