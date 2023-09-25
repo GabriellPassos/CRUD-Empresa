@@ -22,21 +22,6 @@
 - PHP
 
 
-## :rocket: Executando o projeto
-### Front-End
-Pré-requisitos: npm
-```bash
-# clone o repositório da aplicação
-
-gh repo clone GabriellPassos/OrkutAngular
-
-#execute o projeto
-
-$ ng Serve
-
-#página rodará em: http://localhost:4200/
-```
-
 # Autor
 
 
