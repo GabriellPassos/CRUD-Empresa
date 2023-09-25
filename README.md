@@ -2,7 +2,6 @@
 ## Sobre o projeto
  CRUD feito com PHP, projeto pensado com propósito de estudo. Implementa conexão com banco de dados e sitema de login de usuário. 
 <br>
- - [CRUD Empresa](https://gabriellpassos.github.io/OrkutAngular/)
 
 ## :mag_right: Visão geral
 ### Página de autenticação
