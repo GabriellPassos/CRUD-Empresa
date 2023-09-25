@@ -30,8 +30,8 @@
             <?php
             include "conexao.php";
             if (isset($_POST['senha']) && $_POST['usuario']) {
-                $usuario = $_POST['usuario'];
-                $senha = $_POST['senha'];
+                $usuario =  higenizarTexto($conn, $_POST['usuario']);
+                $senha =  higenizarTexto($conn, $_POST['senha']);
                 $sql = "SELECT * FROM `usuarios` WHERE usuario = '$usuario'";
                 $resultado = mysqli_query($conn, $sql);
 

@@ -16,10 +16,10 @@
             <div class="col">
                 <?php
                 include "../conexao.php";
-                $nome = $_POST['nome'];
-                $endereco = $_POST['endereco'];
-                $telefone = $_POST['telefone'];
-                $email = $_POST['email'];
+                $nome = higenizarTexto($conn, $_POST['nome']);
+                $endereco =  higenizarTexto($conn, $_POST['endereco']);
+                $telefone =  higenizarTexto($conn, $_POST['telefone']);
+                $email =  higenizarTexto($conn, $_POST['email']);
                 $data_nascimento = $_POST['data_nascimento'];
                 if(isset($_FILES['foto'])){
                     $foto = $_FILES['foto'];

@@ -31,6 +31,11 @@
         } catch (Exception $e) {
             //throw $th;
         }
-
     }
+    function higenizarTexto($conn, $texto){
+    $textoLimpo = mysqli_real_escape_string($conn, $texto);
+    $textoLimpo = htmlspecialchars($texto);
+    return $textoLimpo;
+    }
+
 ?>

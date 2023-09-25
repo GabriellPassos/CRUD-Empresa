@@ -14,7 +14,7 @@
             <div class="col">
                 <?php
                 include "../conexao.php";
-                $codigo = $_POST['codigo'];
+                $codigo =  higenizarTexto($conn, $_POST['codigo']);
                 $sql = "DELETE FROM `pessoas` WHERE codigo = $codigo";
                 if (mysqli_query($conn, $sql)) {
                     echo mensagem("Pessoa excluida com sucesso", "success");

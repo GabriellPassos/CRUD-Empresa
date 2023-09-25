@@ -12,7 +12,7 @@
 
 <?php
     include "../conexao.php";
-    $codigo = $_GET['codigo'] ?? '';
+    $codigo =  higenizarTexto($conn, $_GET['codigo'] ?? '');
     $sql = "SELECT * FROM pessoas WHERE codigo = $codigo";
     $dados = mysqli_query($conn, $sql);
     $linha = mysqli_fetch_assoc($dados);

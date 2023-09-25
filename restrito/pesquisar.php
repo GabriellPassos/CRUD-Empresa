@@ -45,12 +45,12 @@
             <tbody>
                 <?php
                 while ($linha = mysqli_fetch_assoc($dados)) {
-                    $codigo = $linha['codigo'];
-                    $nome = $linha['nome'];
-                    $endereco = $linha['endereco'];
-                    $telefone = $linha['telefone'];
-                    $email = $linha['email'];
-                    $data_nascimento = formatarData($linha['data_nascimento']);
+                    $codigo =  higenizarTexto($conn, $linha['codigo']);
+                    $nome =  higenizarTexto($conn, $linha['nome']);
+                    $endereco =  higenizarTexto($conn, $linha['endereco']);
+                    $telefone =  higenizarTexto($conn, $linha['telefone']);
+                    $email =  higenizarTexto($conn, $linha['email']);
+                    $data_nascimento =  higenizarTexto($conn, formatarData($linha['data_nascimento']));
                     $foto = $linha['foto'];
                     echo "<tr>
                             <th ><img class='exibicao_foto' src='img/$foto'></th>
