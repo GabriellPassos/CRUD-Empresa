@@ -44,7 +44,7 @@
                         session_start();
                         $_SESSION['usuario'] = $usuario;
                         echo mensagem("Usuário conectado", "success");
-                        header("location: restrito");
+                        header("location: restrito/index.php");
                     }
                 }else{
                     echo mensagem("Dados inválidos", "danger");

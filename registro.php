@@ -60,7 +60,7 @@
                     session_destroy();
                     session_start();
                     $_SESSION['usuario'] = $usuario;
-                    header("location: restrito");
+                    header("location: restrito/index.php");
                 } else {
                     echo mensagem("Falha no cadastro", "danger");
                 }
